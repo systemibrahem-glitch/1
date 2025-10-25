@@ -2,9 +2,8 @@ name = "ibrahim-accounting"
 compatibility_date = "2024-01-01"
 
 [build]
-command = "npm run build"
-cwd = "client"
-watch_dir = "client"
+command = "cd client && npm install && npm run build"
+publish = "client/dist"
 
 [[env.production.vars]]
 VITE_SUPABASE_URL = "https://imuequpezaixljuxljdn.supabase.co"

@@ -1,7 +1,14 @@
 {
   "name": "ibrahim-accounting",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "build": "cd client && npm install && npm run build"
+    "build:client": "npm ci --prefix client && npm run build --prefix client",
+    "build": "npm run build:client",
+    "dev": "npm --prefix client run dev",
+    "preview": "npm --prefix client run preview"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
