@@ -117,3 +117,24 @@ Thumbs.db
 
 # Local development
 .local
+
+# Windows specific
+AppData/
+Cookies/
+Local Settings/
+My Documents/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start Menu/
+Templates/
+NTUSER.DAT*
+ntuser.dat*
+desktop.ini
+
+# System files
+*.bin
+*.cache
+*.tmp
+*.temp
