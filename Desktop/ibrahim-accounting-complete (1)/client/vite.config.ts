@@ -27,5 +27,12 @@ export default defineConfig({
   server: {
     port: 5173,
     host: true
-  }
+  },
+  // إعدادات Netlify
+  define: {
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
+  },
+  // إعدادات النشر
+  base: '/',
+  publicDir: 'public'
 })

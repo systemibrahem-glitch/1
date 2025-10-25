@@ -6,9 +6,23 @@
     "build:client": "npm ci --prefix client && npm run build --prefix client",
     "build": "npm run build:client",
     "dev": "npm --prefix client run dev",
-    "preview": "npm --prefix client run preview"
+    "preview": "npm --prefix client run preview",
+    "netlify:build": "npm install && cd client && npm install && cd .. && npm run build",
+    "netlify:dev": "npm run dev",
+    "netlify:serve": "npm run preview"
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "netlify": {
+    "build": {
+      "command": "npm run netlify:build",
+      "publish": "client/dist"
+    },
+    "dev": {
+      "command": "npm run netlify:dev",
+      "port": 5173,
+      "publish": "client/dist"
+    }
   }
 }
