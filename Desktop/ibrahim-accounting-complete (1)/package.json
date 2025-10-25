@@ -1,0 +1,53 @@
+{
+  "name": "ibrahim-accounting",
+  "version": "1.0.0",
+  "description": "نظام إبراهيم للمحاسبة - نظام محاسبة شامل ومتقدم",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "accounting",
+    "business",
+    "management",
+    "inventory",
+    "payroll",
+    "reports",
+    "multi-currency",
+    "arabic"
+  ],
+  "author": {
+    "name": "Ibrahim Accounting System",
+    "email": "systemibrahem@gmail.com",
+    "url": "https://github.com/systemibrahem-glitch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/systemibrahem-glitch/50.git"
+  },
+  "bugs": {
+    "url": "https://github.com/systemibrahem-glitch/50/issues"
+  },
+  "homepage": "https://github.com/systemibrahem-glitch/50#readme",
+  "scripts": {
+    "build": "cd ibrahim-accounting && npm install && npm run build",
+    "dev": "cd ibrahim-accounting && npm run dev",
+    "start": "cd ibrahim-accounting && npm run preview",
+    "test": "cd ibrahim-accounting && npm run test",
+    "lint": "cd ibrahim-accounting && npm run lint",
+    "format": "cd ibrahim-accounting && npm run format",
+    "clean": "rm -rf ibrahim-accounting/node_modules ibrahim-accounting/dist ibrahim-accounting/.vite",
+    "install-all": "npm install && cd ibrahim-accounting && npm install",
+    "build:production": "cd ibrahim-accounting && npm install && npm run build",
+    "deploy:netlify": "npm run build:production",
+    "deploy:cloudflare": "npm run build:production"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "workspaces": [
+    "ibrahim-accounting"
+  ]
+}
