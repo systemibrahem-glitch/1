@@ -42,10 +42,11 @@ const trpcClient = trpc.createClient({
       url: "/api/trpc",
       transformer: superjson,
       fetch(input, init) {
-        return globalThis.fetch(input, {
-          ...(init ?? {}),
-          credentials: "include",
-        });
+        // Return mock data instead of making real API calls
+        return Promise.resolve(new Response(JSON.stringify({ result: { data: null } }), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' }
+        }));
       },
     }),
   ],
