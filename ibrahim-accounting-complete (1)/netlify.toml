@@ -1,7 +1,6 @@
 [build]
-  command = "cd \"ibrahim-accounting-complete (1)\" && npm install && npm run build"
-  publish = "ibrahim-accounting-complete (1)/dist"
-
+  command = "npm install && npm run build"
+  publish = "dist"
 [build.environment]
   NODE_VERSION = "18"
   NPM_FLAGS = "--no-optional --no-audit --no-fund"
@@ -16,7 +15,6 @@
   VITE_SUPPORTED_CURRENCIES = '["TRY","SYP","USD"]'
   VITE_ENABLE_ANALYTICS = "false"
   VITE_ENABLE_ERROR_REPORTING = "false"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
