@@ -1,20 +1,8 @@
 {
   "name": "ibrahim-accounting",
   "version": "1.0.0",
-  "description": "نظام إبراهيم للمحاسبة - نظام محاسبة شامل ومتقدم",
-  "type": "module",
-  "license": "MIT",
   "scripts": {
     "build": "cd ibrahim-accounting && npm install && npm run build",
-    "build:production": "cd ibrahim-accounting && npm install && npm run build",
-    "dev": "cd ibrahim-accounting && npm run dev",
-    "start": "cd ibrahim-accounting && npm run preview"
-  },
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=8.0.0"
-  },
-  "dependencies": {
-    "npm": "^8.0.0"
+    "build:production": "cd ibrahim-accounting && npm install && npm run build"
   }
 }
