@@ -4,7 +4,7 @@
   
 [build.environment]
   NODE_VERSION = "18"
-  NPM_FLAGS = "--production=false"
+  NPM_FLAGS = "--no-optional --no-audit --no-fund"
 
 # إعدادات البيئة
 [build.environment]
