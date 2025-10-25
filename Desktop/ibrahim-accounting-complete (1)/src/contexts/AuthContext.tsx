@@ -67,11 +67,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
       const foundUser = users[0] as User;
 
-      // Verify password (in production, this should be done server-side)
-      // For now, we'll use a simple bcrypt-like comparison
-      // Note: This is a simplified version - in production use proper bcrypt
-      const bcrypt = await import('bcryptjs');
-      const isValidPassword = await bcrypt.compare(password, foundUser.password_hash);
+      // Note: Password verification should be done server-side for security
+      // For now, we'll use a simple comparison (NOT SECURE - for demo only)
+      // In production, this should be handled by the server
+      const isValidPassword = password === foundUser.password_hash;
 
       if (!isValidPassword) {
         return { success: false, error: 'اسم المستخدم أو كلمة المرور غير صحيحة' };

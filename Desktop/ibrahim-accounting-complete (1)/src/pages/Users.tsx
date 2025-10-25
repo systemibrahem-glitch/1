@@ -70,13 +70,12 @@ export default function Users() {
     }
 
     try {
-      const bcrypt = await import('bcryptjs');
-      const password_hash = await bcrypt.hash(formData.password || '123456', 10);
-
+      // Note: Password hashing should be done server-side for security
+      // For now, we'll send the password to be hashed on the server
       const userData = {
         ...formData,
         store_id: store.id,
-        password_hash,
+        password: formData.password || '123456', // Server will hash this
         created_by: currentUser.id,
       };
 
