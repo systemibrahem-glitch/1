@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build:production"
-  publish = "ibrahim-accounting/client/dist"
+  command = "npm run build"
+  publish = "dist"
   
 [build.environment]
   NODE_VERSION = "18"
@@ -9,3 +9,4 @@
   from = "/*"
   to = "/index.html"
   status = 200
+

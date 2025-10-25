@@ -1,13 +1,10 @@
 name = "ibrahim-accounting"
 compatibility_date = "2024-01-01"
 
-# This is a static site deployment
-pages_build_output_dir = "ibrahim-accounting/client/dist"
-
 [build]
-command = "npm run build:production"
-cwd = "ibrahim-accounting"
-watch_dir = "ibrahim-accounting"
+command = "npm run build"
+cwd = "client"
+watch_dir = "client"
 
 [[env.production.vars]]
 VITE_SUPABASE_URL = "https://imuequpezaixljuxljdn.supabase.co"

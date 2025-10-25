@@ -2,7 +2,6 @@
   "name": "ibrahim-accounting",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd ibrahim-accounting && npm install && npm run build",
-    "build:production": "cd ibrahim-accounting && npm install && npm run build"
+    "build": "cd client && npm install && npm run build"
   }
 }

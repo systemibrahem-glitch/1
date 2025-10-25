@@ -1,6 +1,6 @@
 # نظام إبراهيم للمحاسبة | Ibrahim Accounting System
 
-![Logo](ibrahim-accounting/client/public/logo.png)
+![Logo](client/public/logo.png)
 
 ## نظرة عامة
 
@@ -109,7 +109,7 @@ npm run install-all
 
 ### 3. إعداد متغيرات البيئة
 ```bash
-cp env.example ibrahim-accounting/client/.env
+cp env.example client/.env
 ```
 
 قم بتحديث ملف `.env` بالقيم الصحيحة:
@@ -146,28 +146,24 @@ npm run deploy:cloudflare
 
 ```
 ibrahim-accounting/
-├── ibrahim-accounting/         # المشروع الرئيسي
-│   ├── client/                 # تطبيق الواجهة الأمامية
-│   │   ├── public/            # الملفات العامة
-│   │   ├── src/               # الكود المصدري
-│   │   │   ├── components/    # المكونات
-│   │   │   ├── pages/         # الصفحات
-│   │   │   ├── contexts/      # سياق التطبيق
-│   │   │   ├── hooks/         # الخطافات المخصصة
-│   │   │   ├── lib/           # المكتبات والأدوات
-│   │   │   └── _core/         # الملفات الأساسية
-│   │   ├── package.json       # تبعيات الواجهة الأمامية
-│   │   └── vite.config.ts     # إعدادات Vite
-│   ├── server/                # الخادم الخلفي (قيد التطوير)
-│   ├── shared/                # الملفات المشتركة
-│   ├── drizzle/               # مخطط قاعدة البيانات
-│   ├── package.json           # تبعيات المشروع الرئيسي
-│   ├── netlify.toml           # إعدادات Netlify
-│   ├── wrangler.toml          # إعدادات Cloudflare
-│   └── README.md              # هذا الملف
-├── package.json               # تبعيات المجلد الرئيسي
-├── wrangler.toml              # إعدادات Cloudflare للمجلد الرئيسي
-└── README.md                  # هذا الملف
+├── client/                 # تطبيق الواجهة الأمامية
+│   ├── public/            # الملفات العامة
+│   ├── src/               # الكود المصدري
+│   │   ├── components/    # المكونات
+│   │   ├── pages/         # الصفحات
+│   │   ├── contexts/      # سياق التطبيق
+│   │   ├── hooks/         # الخطافات المخصصة
+│   │   ├── lib/           # المكتبات والأدوات
+│   │   └── _core/         # الملفات الأساسية
+│   ├── package.json       # تبعيات الواجهة الأمامية
+│   └── vite.config.ts     # إعدادات Vite
+├── server/                # الخادم الخلفي (قيد التطوير)
+├── shared/                # الملفات المشتركة
+├── drizzle/               # مخطط قاعدة البيانات
+├── package.json           # تبعيات المشروع الرئيسية
+├── netlify.toml           # إعدادات Netlify
+├── wrangler.toml          # إعدادات Cloudflare
+└── README.md              # هذا الملف
 ```
 
 ## الميزات المتقدمة
