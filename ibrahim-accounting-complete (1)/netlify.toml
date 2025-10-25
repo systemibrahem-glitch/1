@@ -1,6 +1,6 @@
 [build]
-  command = "npm install && npm run build"
-  publish = "dist"
+  command = "cd \"ibrahim-accounting-complete (1)\" && npm install && npm run build"
+  publish = "ibrahim-accounting-complete (1)/dist"
 
 [build.environment]
   NODE_VERSION = "18"
