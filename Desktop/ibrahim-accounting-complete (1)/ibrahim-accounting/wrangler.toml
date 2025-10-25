@@ -1,0 +1,13 @@
+name = "ibrahim-accounting"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "npm run build"
+cwd = "client"
+watch_dir = "client"
+
+[[env.production.vars]]
+VITE_SUPABASE_URL = "https://imuequpezaixljuxljdn.supabase.co"
+VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImltdWVxdXBlemFpeGxqdXhsamRuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjExOTI5MDEsImV4cCI6MjA3Njc2ODkwMX0.uuVPRX9J_QBzZmjWwv6uGaDAc1YRd7LjBTK0NVfRsHo"
+VITE_APP_TITLE = "Ibrahim Accounting System"
+VITE_APP_LOGO = "/logo.png"

@@ -115,6 +115,9 @@ Thumbs.db
 # Netlify
 .netlify
 
+# Cloudflare
+.wrangler/
+
 # Local development
 .local
 
